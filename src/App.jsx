@@ -1,7 +1,13 @@
-export default function App() {
+import React from "react";
+import TabMonitoringWrapper from "./components/TabMonitoringWrapper";
+import Quiz from "./components/Quiz";
+
+const App = () => {
   return (
-    <h1 className="text-3xl font-bold underline">
-      Hello world!
-    </h1>
-  )
-}
+    <TabMonitoringWrapper>
+      <Quiz />
+    </TabMonitoringWrapper>
+  );
+};
+
+export default App;
